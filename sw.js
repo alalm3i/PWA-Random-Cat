@@ -25,14 +25,13 @@ async function cacheFirst(req) {
     return cachedResponse || fetch(req);
 }
 
-async function networkFirst(request) {
-    const dynamicCache = await caches.open('meow-dynamic');
+async function networkFirst(req) {
+    const cache = await caches.open('meow-dynamic');
     try {
-      const networkResponse = await fetch(request);
-      dynamicCache.put(request, networkResponse.clone());
-      return networkResponse;
-    } catch (err) {
-      const cachedResponse = await dynamicCache.match(request);
-      return cachedResponse || await caches.match('./fallback.json');
+      const res = await fetch(req);
+      cache.put(req, res.clone());
+      return res;
+    } catch (error) {
+      return  await cache.match(req);
     }
   }
