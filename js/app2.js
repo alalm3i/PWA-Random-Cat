@@ -14,9 +14,9 @@ async function updatePrayTimes() {
     const res = await fetch("https://aws.random.cat/meow");
     const json = await res.json();
 
-    main.innerHTML = json.times.map(createTimeTable).join("\n");
+    main.innerHTML = json.file.map(createTimeTable).join("\n");
 }
 
 function createTimeTable(times){
-    return times;
+    console.log(times) ;
 }
