@@ -11,10 +11,16 @@ window.addEventListener('load', e =>{
 });
 
 async function updatePrayTimes() {
-    const res = await fetch("https://aws.random.cat/meow");
-    const json = await res.json();
-
-    main.innerHTML = json.file.map(createTimeTable).join("\n");
+    //const res = await fetch("https://aws.random.cat/meow");
+    //const json = await res.json();
+    fetch('https://aws.random.cat/meow')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(myJson) {
+      console.log(myJson);
+    });
+    main.innerHTML = json.file.join("\n");
 }
 
 function createTimeTable(times){
