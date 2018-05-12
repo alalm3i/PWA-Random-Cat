@@ -1,1 +1,1 @@
-# PWA-Salah-Time-Example
+# Progressive Web App Example
