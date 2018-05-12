@@ -11,14 +11,7 @@ window.addEventListener('load', e =>{
 });
 
 async function updatePrayTimes() {
-    const res = await fetch("https://aws.random.cat/meow",{
-        method: 'GET',
-        headers:{
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Credentials':true,
-          'Access-Control-Allow-Methods':'GET'
-        }
-    });
+    const res = await fetch("https://aws.random.cat/meow");
     const json = await res.json();
 
     main.innerHTML = json.times.map(createTimeTable).join("\n");
