@@ -13,14 +13,14 @@ window.addEventListener('load', e =>{
 async function updatePrayTimes() {
     //const res = await fetch("https://aws.random.cat/meow");
     //const json = await res.json();
-    fetch('https://aws.random.cat/meow')
+    await fetch('https://aws.random.cat/meow')
     .then(function(response) {
-      return response.json();
+      return await response.json();
     })
     .then(function(myJson) {
       console.log(myJson);
     });
-    main.innerHTML = json.file.join("\n");
+    //main.innerHTML = json.file.join("\n");
 }
 
 function createTimeTable(times){
