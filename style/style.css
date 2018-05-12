@@ -1,18 +1,11 @@
 body {
-    background: #00d2ff;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3a7bd5, #00d2ff);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background: #2196f3;/* fallback for old browsers */
     font-family: Tahoma, Geneva, sans-serif;
 }
-
 h1 {
     color: aliceblue;
     text-align: center;
-    margin-top: 2;
+    margin-top: 2px;
 }
 h5{
     color: azure;
