@@ -10,7 +10,7 @@ async function updateRandomMeow() {
     })
     .then(function(myJson) {
       console.log(myJson.file);
-     // document.getElementById("meow").src=myJson.file;
+      document.getElementById("meow").src=myJson.file;
     });
 }
 
