@@ -11,14 +11,7 @@ window.addEventListener('load', e =>{
 });
 
 async function updatePrayTimes() {
-    const res = await fetch(apiUrl,{
-        method: 'GET',
-        headers:{
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Credentials':true,
-          'Access-Control-Allow-Methods':'POST, GET'
-        }
-    });
+    const res = await fetch(apiUrl);
     const json = await res.json();
 
     main.innerHTML = json.times.map(createTimeTable).join("\n");

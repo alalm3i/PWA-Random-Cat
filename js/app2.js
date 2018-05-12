@@ -11,7 +11,7 @@ window.addEventListener('load', e =>{
 });
 
 async function updatePrayTimes() {
-    const res = await fetch("http://muslimsalat.com/damam/daily/12-05-2018/true/6.json?key=fc8ace5fdcde5f9f4f2ec023adba2077",{
+    const res = await fetch("https://aws.random.cat/meow",{
         method: 'GET',
         headers:{
           'Access-Control-Allow-Origin': '*',
