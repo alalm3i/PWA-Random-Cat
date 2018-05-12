@@ -6,23 +6,32 @@ body {
     background: linear-gradient(to right, #3a7bd5, #00d2ff);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    font-family: Tahoma, Geneva, sans-serif;
 }
 
 h1 {
     color: aliceblue;
     text-align: center;
+    margin-top: 2;
 }
-
+h5{
+    color: azure;
+    text-align: center;
+    margin: -24px 0px 5px;
+    padding:0;
+    font-weight: 200;
+}
 img {
     max-width: 100%;
     height: auto;
 }
 
 div.random {
-    width: 150px;
-    min-height: 150px;
-    max-height: auto;
-    float: left;
+    width: 250px;
+    max-height: 250px;
     margin: 3px;
     padding: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
