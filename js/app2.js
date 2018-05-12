@@ -14,7 +14,7 @@ async function updatePrayTimes() {
     //const res = await fetch("https://aws.random.cat/meow");
     //const json = await res.json();
     await fetch('https://aws.random.cat/meow')
-    .then(function(response) {
+    .then(async function(response) {
       return await response.json();
     })
     .then(function(myJson) {
