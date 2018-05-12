@@ -16,7 +16,7 @@ async function updatePrayTimes() {
         headers:{
           'Access-Control-Allow-Origin': '*',
           'Access-Control-Allow-Credentials':true,
-          'Access-Control-Allow-Methods':'POST, GET'
+          'Access-Control-Allow-Methods':'GET'
         }
     });
     const json = await res.json();
