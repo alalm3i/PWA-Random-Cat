@@ -1,1 +1,1 @@
-# Progressive Web App Example.
+# Progressive Web App Example
